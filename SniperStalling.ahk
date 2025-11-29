@@ -32,7 +32,6 @@ disableFastForward() {
     color := PixelGetColor(roundButtonX, roundButtonY)
     if (color = 0xFFFFFF) { ; check if round is in fast forward
         ControlClick("x" . roundButtonX " y" . roundButtonY, gameWindow)
-        buildStallSetup()
     }
 }
 
